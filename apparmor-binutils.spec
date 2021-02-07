@@ -5,12 +5,12 @@
 Summary:	Basic AppArmor binary utilities
 Summary(pl.UTF-8):	Podstawowe narzędzia AppArmor w postaci binarnej
 Name:		apparmor-binutils
-Version:	2.13.4
+Version:	3.0.1
 Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	http://launchpad.net/apparmor/2.13/%{version}/+download/apparmor-%{version}.tar.gz
-# Source0-md5:	a50b793a3362551f07733be3df9c328f
+Source0:	http://launchpad.net/apparmor/3.0/%{version}/+download/apparmor-%{version}.tar.gz
+# Source0-md5:	e05eab22bdd1dfc64854856a7292cf09
 URL:		http://wiki.apparmor.net/
 BuildRequires:	libapparmor-devel >= 1:%{version}
 %{?with_static:BuildRequires:	libapparmor-static >= 1:%{version}}
@@ -50,5 +50,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/aa-enabled
 %attr(755,root,root) %{_bindir}/aa-exec
+%attr(755,root,root) %{_bindir}/aa-features-abi
+%attr(755,root,root) %{_sbindir}/aa-status
+%attr(755,root,root) %{_sbindir}/apparmor_status
 %{_mandir}/man1/aa-enabled.1*
 %{_mandir}/man1/aa-exec.1*
+%{_mandir}/man1/aa-features-abi.1*
+%{_mandir}/man8/aa-status.8*
+%{_mandir}/man8/apparmor_status.8*
