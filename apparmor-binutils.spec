@@ -5,12 +5,12 @@
 Summary:	Basic AppArmor binary utilities
 Summary(pl.UTF-8):	Podstawowe narzędzia AppArmor w postaci binarnej
 Name:		apparmor-binutils
-Version:	3.0.1
-Release:	2
+Version:	3.0.4
+Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://launchpad.net/apparmor/3.0/%{version}/+download/apparmor-%{version}.tar.gz
-# Source0-md5:	e05eab22bdd1dfc64854856a7292cf09
+# Source0-md5:	5215a5751a90a45149c699fc3e61a6e8
 URL:		http://wiki.apparmor.net/
 BuildRequires:	libapparmor-devel >= 1:%{version}
 %{?with_static:BuildRequires:	libapparmor-static >= 1:%{version}}
