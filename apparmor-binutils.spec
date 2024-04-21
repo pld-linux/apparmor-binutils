@@ -9,9 +9,9 @@ Version:	3.1.7
 Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	http://launchpad.net/apparmor/3.1/%{version}/+download/apparmor-%{version}.tar.gz
+Source0:	https://launchpad.net/apparmor/3.1/%{version}/+download/apparmor-%{version}.tar.gz
 # Source0-md5:	eee581ab969f708f1e4c6f2847c0c7a6
-URL:		http://wiki.apparmor.net/
+URL:		https://wiki.apparmor.net/
 BuildRequires:	libapparmor-devel >= 1:%{version}
 %{?with_static:BuildRequires:	libapparmor-static >= 1:%{version}}
 %{!?with_static:Requires:	libapparmor >= 1:%{version}}
