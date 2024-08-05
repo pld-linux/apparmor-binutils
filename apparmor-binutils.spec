@@ -6,7 +6,7 @@ Summary:	Basic AppArmor binary utilities
 Summary(pl.UTF-8):	Podstawowe narzędzia AppArmor w postaci binarnej
 Name:		apparmor-binutils
 Version:	4.0.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	https://launchpad.net/apparmor/4.0/%{version}/+download/apparmor-%{version}.tar.gz
