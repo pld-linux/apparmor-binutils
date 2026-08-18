@@ -5,12 +5,12 @@
 Summary:	Basic AppArmor binary utilities
 Summary(pl.UTF-8):	Podstawowe narzędzia AppArmor w postaci binarnej
 Name:		apparmor-binutils
-Version:	4.1.0
+Version:	4.1.8
 Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	https://launchpad.net/apparmor/4.1/%{version}/+download/apparmor-%{version}.tar.gz
-# Source0-md5:	a7b85f6de1fc72d2a73da80722c5538e
+Source0:	https://gitlab.com/apparmor/apparmor/-/archive/v%{version}/apparmor-v%{version}.tar.gz
+# Source0-md5:	f2bba43c1631b7a3db6bd106d5a6fb33
 URL:		https://wiki.apparmor.net/
 BuildRequires:	libapparmor-devel >= 1:%{version}
 %{?with_static:BuildRequires:	libapparmor-static >= 1:%{version}}
@@ -24,7 +24,7 @@ Basic AppArmor utilities written in compiled languages.
 Podstawowe narzędzia AppArmor napisane w językach kompilowanych.
 
 %prep
-%setup -q -n apparmor-%{version}
+%setup -q -n apparmor-v%{version}
 
 %build
 %{__make} -C binutils \
